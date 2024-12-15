@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+/* the font */
+* {
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+body {
+  background-image: linear-gradient(to right, #000000, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* links */
+a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  background-image: linear-gradient(to right, #383844a4 30%, #000000de),
+    url(thumb-1920-1289648.jpg); /* background */
+  width: 90%;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+.container:hover {
+  background-image: linear-gradient(to right, #383844d3 30%, transparent),
+    url(thumb-1920-1289648.jpg);
+}
+/* logo & nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000cc;
+}
+.logo {
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+.logo:hover {
+  cursor: pointer;
+  color: rgba(99, 167, 230, 0.774);
+}
+ul {
+  width: 60%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+}
+ul a {
+  border-bottom: 2px solid transparent;
+}
+ul a:hover {
+  border-bottom: 2px solid rgba(99, 167, 230, 0.774);
+  color: rgba(88, 174, 255, 0.877);
+}
+/* content */
+.contant {
+  color: white;
+  width: 50%;
+  margin-top: 50px;
+  padding: 30px;
+}
+.contant h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.contant p {
+  letter-spacing: 1px;
+  width: 400px;
+  padding: 20px 0;
+}
+button {
+  font-size: larger;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+button:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+}
+/* media query */
+@media (max-width: 600px) {
+  .container {
+    background-image: linear-gradient(to right, #01022dd3 30%, #000000b4),
+      url(download.webp);
+    width: 90%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+}
